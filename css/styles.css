@@ -1,0 +1,54 @@
+body {
+  max-width: 1280px;
+  margin: auto;
+}
+
+nav ul {
+  list-style: none;
+}
+nav ul li a {
+  display: block;
+  text-decoration: none;
+}
+h1 {
+  text-align: center;
+}
+.results {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.card {
+  display: grid;
+  grid-template-columns: 2fr, 1fr;
+  text-align: left;
+}
+.card > .title {
+  font-size: xx-large;
+}
+.card > .price {
+  font-size: x-large;
+}
+/*.details > p {
+ 
+}*/
+.description {
+  grid-column: 1/3;
+}
+.main-photo > img {
+  width: 500px;
+}
+.thumb-container {
+  display: inline-block;
+  overflow: hidden;
+}
+.thumb-holder {
+  display: inline-block;
+  height: 100px;
+  width: 125px;
+  background-color: aliceblue;
+}
+.thumb-holder > img {
+  max-width: 100%;
+
+  overflow: hidden;
+}
