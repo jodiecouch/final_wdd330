@@ -1,0 +1,86 @@
+{
+    "ads":
+        [
+          {
+            "id":1,
+            "title": "Title",
+            "description":"Description",
+            "price": 25000.00,
+            "year":1998,
+            "model":2500,
+            "miles":557645,
+            "trim":"SLT",
+            "drive":"4WD",
+            "tran":"Manual",
+            "valve": 12,
+            "imgages":[
+                "url1",
+                "url2",
+                "url3"
+            ],
+            "status": "active"
+
+          } , 
+          {
+            "id":2,
+            "title": "Title",
+            "description":"Description",
+            "price": 25000.00,
+            "year":1999,
+            "model":2500,
+            "miles":557645,
+            "trim":"SLT",
+            "drive":"4WD",
+            "tran":"Manual",
+            "valve": 24,
+            "imgages":[
+                "url1",
+                "url2",
+                "url3"
+            ],
+            "status": "active"
+
+          } , 
+          {
+            "id":3,
+            "title": "Title",
+            "description":"Description",
+            "price": 25000.00,
+            "year":2005,
+            "model":2500,
+            "miles":557645,
+            "trim":"SLT",
+            "drive":"4WD",
+            "tran":"Manual",
+            "valve": 24,
+            "imgages":[
+                "url1",
+                "url2",
+                "url3"
+            ],
+            "status": "active"
+          } , 
+          {
+            "id":4,
+            "title": "Title",
+            "description":"Description",
+            "price": 25000.00,
+            "year":2010,
+            "model":2500,
+            "miles":557645,
+            "trim":"SLT",
+            "drive":"4WD",
+            "tran":"Automatic",
+            "valve": 24,
+            "imgages":[
+                "url1",
+                "url2",
+                "url3"
+            ],
+            "status": "active"
+          } 
+        ]
+            
+        
+    
+}
