@@ -1,8 +1,8 @@
-import {getAds} from "./Trucks.mjs";
+import {loadAds} from "./Trucks.mjs";
 
  
- const truck = getAds();
- console.log(truck);
+ const truck = loadAds();
+ 
  
  console.log("Hey girl");
 /*
