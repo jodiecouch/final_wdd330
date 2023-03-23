@@ -2,41 +2,38 @@ const dataPlace = "../data/trucks.json";
 
 function adTemplate(truck)
 {
-    return `<div class="card">
-          <p class="id">${truck.id}  </p>
-          <p class="title">${truck.title}</p>
+    let text =  `<div class="card">          
+          <p class="title">${truck.title} <span class="id">${truck.id} </span></p>
           <p class="price">${truck.price}</p>
           <div class="photo-reel">
             <div class="main-photo">
               <img src="images/001/01.jpg" alt="truck" />
             </div>
             <div class="thumb-container">
-              <div class="thumb-holder">
-                <img src="images/001/01.jpg" alt="truck" />
-              </div>
-              <div class="thumb-holder">
-                <img src="images/001/02.jpg" alt="truck" />
-              </div>
-              <div class="thumb-holder">
-                <img src="images/001/03.jpg" alt="truck" />
-              </div>
-              <div class="thumb-holder">
-                <img src="images/001/04.jpg" alt="truck" />
-              </div>
-            </div>
-          </div>
-          <div class="details">
+            ` 
+            let images = truck.images;         
+            
+            images.forEach(function(value, i){
+                text = text + `<div class="thumb-holder">
+                <img src="${value}" alt="ad image" />
+              </div>`
+            });
+                      
+          text = text + `</div>
+           </div>
+            <div class="details">
             <p class="year">${truck.year}</p>
             <p class="model">Model: ${truck.model}</p>
             <p class="mileage">Miles: ${truck.miles}</p>
             <p class="trim">Trim: ${truck.trim}</p>
-            <p class="driv">${truck.driv}</p>
+            <p class="driv">${truck.drive}</p>
             <p class="tranny">${truck.tran}</p>
           </div>
           <div class="description">
             <p>${truck.description}</p>          
             </div>
         </div>`
+        return text;
 }
 
 export function renderWithTemplate(

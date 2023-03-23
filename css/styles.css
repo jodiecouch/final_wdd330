@@ -22,6 +22,9 @@ h1 {
   grid-template-columns: 2fr, 1fr;
   text-align: left;
 }
+.id {
+  display: none;
+}
 .card > .title {
   font-size: xx-large;
 }
