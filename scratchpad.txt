@@ -1,0 +1,65 @@
+ <!--
+        <div class="card">
+          <p class="title">Ad Title</p>
+          <p class="price">$ Sticker Shock</p>
+          <div class="photos">
+            <p>Images in here</p>
+          </div>
+          <div class="details">
+            <p class="year">Year</p>
+            <p class="model">Model</p>
+            <p class="mileage">Miles</p>
+            <p class="trim">Trim</p>
+            <p class="driv">Drive Train</p>
+            <p class="tranny">Transmission Type</p>
+          </div>
+          <div class="description">
+            <p>
+              all the description will be here. I will have plenty to say about
+              how cool it is.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <p class="title">Real Panty Dropper</p>
+          <p class="price">$ Sticker Shock</p>
+          <div class="photo-reel">
+            <div class="main-photo">
+              <img src="images/001/01.jpg" alt="truck" />
+            </div>
+            <div class="thumb-container">
+              <div class="thumb-holder">
+                <img src="images/001/01.jpg" alt="truck" />
+              </div>
+              <div class="thumb-holder">
+                <img src="images/001/02.jpg" alt="truck" />
+              </div>
+              <div class="thumb-holder">
+                <img src="images/001/03.jpg" alt="truck" />
+              </div>
+              <div class="thumb-holder">
+                <img src="images/001/04.jpg" alt="truck" />
+              </div>
+            </div>
+          </div>
+          <div class="details">
+            <p class="year">Year: 2005</p>
+            <p class="model">Model: 2500</p>
+            <p class="mileage">Miles: 124,700</p>
+            <p class="trim">Trim: SLT</p>
+            <p class="driv">4WD</p>
+            <p class="tranny">Manual</p>
+          </div>
+          <div class="description">
+            <p>
+              Real panty dropper. Think two of my child support payments were
+              conceived in this bad boy. This was one of the best trucks ever
+              made, but I have a pencil dick. So I jacked this bad boy up with a
+              6" lift and put 35s on it. Basically I made it as useless as my
+              dick. Roll smoke MFs!
+            </p>
+          </div>
+        </div>
+      </div>
+    -->

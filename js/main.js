@@ -1,10 +1,15 @@
-import {loadAds} from "./Trucks.mjs";
+import {filterResults, loadAds} from "./Trucks.mjs";
 
- 
  const truck = loadAds();
- 
- 
  console.log("Hey girl");
+
+ //document.getElementById("model2500").onclick = filterResults(2500);
+let button = document.getElementById("2500");
+//let button = document.querySelector("button.model") - then need a for each to set the onclick
+button.addEventListener("click",filterResults,false);
+//button.myParam = "2500";
+
+
 /*
  const dataPlace = "data/trucks.json";
   fetch(dataPlace)

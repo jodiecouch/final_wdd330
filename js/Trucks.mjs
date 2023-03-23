@@ -72,4 +72,19 @@ export async function loadAds()
        
 }
 
+export async function filterResults( )
+{
+    //const gold = members.filter(x=> x.membership >=2);  
+    /*this gets all members with a membership level greater then or equal to 2*/
+ console.log(`Value passed was ${this.value} the id is ${this.id}`);
+    //get filtered dataset
+    const data = await getAds();
+    const filteredData = data.filter(ads => ads[this.value] = this.id);
+   console.log(filteredData);
+    //clear results
+FILTER NOT WORKING
+    //build new results html
+
+}
+
  
