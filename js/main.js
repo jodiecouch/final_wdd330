@@ -1,14 +1,22 @@
-import {filterResults, loadAds} from "./Trucks.mjs";
+import {clearFilters, filterResults, loadAds} from "./Trucks.mjs";
 
  const truck = loadAds();
- console.log("Hey girl");
+ //console.log("Hey girl");
 
  //document.getElementById("model2500").onclick = filterResults(2500);
+ // or
+ /*
 let button = document.getElementById("2500");
-//let button = document.querySelector("button.model") - then need a for each to set the onclick
 button.addEventListener("click",filterResults,false);
-//button.myParam = "2500";
+*/
 
+var buttons = document.querySelectorAll("button.filter");
+for(var i = 0; i < buttons.length; i++){
+    buttons[i].addEventListener("click",filterResults,false);
+}
+
+let clear = document.getElementById("clearFilter");
+clear.addEventListener("click",clearFilters,false);
 
 /*
  const dataPlace = "data/trucks.json";

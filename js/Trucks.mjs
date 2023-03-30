@@ -1,4 +1,6 @@
 const dataPlace = "../data/trucks.json";
+const resultsElement = document.querySelector(".results");
+var ads;
 
 function adTemplate(truck)
 {
@@ -51,40 +53,55 @@ export function renderWithTemplate(
 export async function getAds()
 {
     const response = await fetch(dataPlace).then((response) => response.json());
-    console.log(response.ads);
-    //return response.ads;
+    //console.log(response.ads);    
     return response.ads;
 
 }
 async function displayData(ad)
  {
-     console.log(ad.id);
+     //console.log(ad.id);
      const html =  adTemplate(ad);
-     const resultsElement = document.querySelector(".results");
+     //const resultsElement = document.querySelector(".results");
      resultsElement.insertAdjacentHTML("beforeend", html);
  }
 
 export async function loadAds()
 {
-    const data = await getAds();
-    console.log("did i make it to here");
-    data.forEach(displayData);
+    //const data = await getAds();
+    ads = await getAds();
+    //console.log("did i make it to here");
+    ads.forEach(displayData);
        
 }
 
 export async function filterResults( )
-{
-    //const gold = members.filter(x=> x.membership >=2);  
-    /*this gets all members with a membership level greater then or equal to 2*/
- console.log(`Value passed was ${this.value} the id is ${this.id}`);
-    //get filtered dataset
-    const data = await getAds();
-    const filteredData = data.filter(ads => ads[this.value] = this.id);
-   console.log(filteredData);
-    //clear results
-FILTER NOT WORKING
-    //build new results html
+{    
+    //console.log(`Value passed was ${this.value} the id is ${this.id} Ad data follows`);
+    //console.log(ads);
+    
+   
+   //ads should be loaded with all ads from original page load
+   var filteredData = ads.filter(a => a[this.value] == this.id);
 
+    if (filteredData.length > 0){
+      //clear results section
+      resultsElement.innerHTML="";
+
+      filteredData.forEach(displayData);
+    }else{
+      //else tell user no results
+      window.alert("No results found for filter.");
+    }
+        
 }
+
+export async function clearFilters()
+{
+  //clear results section
+  resultsElement.innerHTML="";
+  //show everything again
+  ads.forEach(displayData);
+}
+
 
  
