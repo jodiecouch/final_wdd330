@@ -12,7 +12,8 @@
             "trim":"SLT",
             "drive":"4WD",
             "tran":"Manual",
-            "valve": 12,
+            "valve": "12v",
+            "gen":2,
             "images":[
                 "images/001/02.jpg",
                 "images/001/03.jpg",
@@ -32,7 +33,8 @@
             "trim":"SLT",
             "drive":"4WD",
             "tran":"Manual",
-            "valve": 24,
+            "valve": "24v",
+            "gen":2,
             "images":[
                 "url1",
                 "url2",
@@ -52,7 +54,8 @@
             "trim":"SLT",
             "drive":"4WD",
             "tran":"Manual",
-            "valve": 24,
+            "valve": "24v",
+            "gen":3,
             "images":[
                 "images/001/01.jpg",
                 "images/001/02.jpg",
@@ -71,7 +74,8 @@
             "trim":"SLT",
             "drive":"4WD",
             "tran":"Automatic",
-            "valve": 24,
+            "valve": "24v",
+            "gen":4,
             "images":[
                 "url1",
                 "url2",
