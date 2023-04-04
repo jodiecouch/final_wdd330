@@ -9,7 +9,7 @@ function adTemplate(truck)
           <p class="price">${truck.price}</p>
           <div class="photo-reel">
             <div class="main-photo">
-              <img src="images/001/01.jpg" alt="truck" />
+              <img src="${truck.images[0]}" alt="ad image" />
             </div>
             <div class="thumb-container">
             ` 
@@ -52,7 +52,7 @@ function adTemplate(truck)
 
 function adFilters()
 {
-  let text =`<h1>Trucks For Sale</h1>
+  let text =`<h1>Cummins Ram Trucks For Sale</h1>
       <div class="filters">
         <button class="filter" id="1500" value="model">1500</button>
         <button class="filter" id="2500" value="model">2500</button>

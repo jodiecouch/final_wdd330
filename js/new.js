@@ -93,8 +93,20 @@ function initDropEffect(box){
 }
 //end codepen code
 
+document.getElementById("newAd").addEventListener('submit', getNewAd);
 
-
-    
+function getNewAd(event)
+{
+    event.preventDefault();
+    const data = new FormData(event.target);
+    /*method 1
+    const formDataObj = {};
+    data.forEach((value, key) => (formDataObj[key] = value));
+    console.log(formDataObj);
+    */
+   /*method 2*/
+   const formDataObj = Object.fromEntries(data.entries());
+    console.log(formDataObj);
+} 
 
 

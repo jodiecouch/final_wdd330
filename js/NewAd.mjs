@@ -1,7 +1,7 @@
 
 function newAdTemplate()
 {
-    let text = `<form name="create">
+    let text = `<form id="newAd" name="create">
         <fieldset class="col1">
           <label for="year">Year</label>
           <select name="year" id="year">
@@ -66,11 +66,12 @@ function newAdTemplate()
           </textarea>
 
           <div class="pictures">
+          <p>Someday in the furture this can handle photos</p>
             <div class="box">
               <div class="js--image-preview"></div>
               <div class="upload-options">
                 <label>
-                  <input type="file" class="image-upload" accept="image/*" />
+                  <input type="file" class="image-upload" accept="image/*" name="images"/>
                 </label>
               </div>
             </div>
@@ -78,7 +79,7 @@ function newAdTemplate()
               <div class="js--image-preview"></div>
               <div class="upload-options">
                 <label>
-                  <input type="file" class="image-upload" accept="image/*" />
+                  <input type="file" class="image-upload" accept="image/*" name="images"/>
                 </label>
               </div>
             </div>
@@ -86,7 +87,7 @@ function newAdTemplate()
               <div class="js--image-preview"></div>
               <div class="upload-options">
                 <label>
-                  <input type="file" class="image-upload" accept="image/*" />
+                  <input type="file" class="image-upload" accept="image/*" name="images"/>
                 </label>
               </div>
             </div>
@@ -94,7 +95,7 @@ function newAdTemplate()
               <div class="js--image-preview"></div>
               <div class="upload-options">
                 <label>
-                  <input type="file" class="image-upload" accept="image/*" />
+                  <input type="file" class="image-upload" accept="image/*" name="images"/>
                 </label>
               </div>
             </div>
@@ -102,7 +103,7 @@ function newAdTemplate()
               <div class="js--image-preview"></div>
               <div class="upload-options">
                 <label>
-                  <input type="file" class="image-upload" accept="image/*" />
+                  <input type="file" class="image-upload" accept="image/*" name="images"/>
                 </label>
               </div>
             </div>
@@ -120,5 +121,19 @@ export async function loadForm()
     const html = newAdTemplate();
     const titleElement = document.querySelector(".results");  
     titleElement.insertAdjacentHTML("beforeend", html);
-  
+    document.getElementById("newAd").addEventListener('submit', getNewAd);
+}
+
+function getNewAd(event)
+{
+    event.preventDefault();
+    const data = new FormData(event.target);
+    /*method 1
+    const formDataObj = {};
+    data.forEach((value, key) => (formDataObj[key] = value));
+    console.log(formDataObj);
+    */
+   /*method 2*/
+   const formDataObj = Object.fromEntries(data.entries());
+    console.log(formDataObj);
 }

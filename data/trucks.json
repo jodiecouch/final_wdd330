@@ -3,9 +3,9 @@
         [
           {
             "id":1,
-            "title": "Title",
-            "description":"Description",
-            "price": 25000.00,
+            "title": "Green Gripper",
+            "description":"Rare find! 12 Valve. Manual transmission. Even more rare to have one in this condition. ",
+            "price": 20000.00,
             "year":1998,
             "model":2500,
             "miles":557645,
@@ -15,6 +15,29 @@
             "valve": "12v",
             "gen":2,
             "images":[
+                "images/001/01_01.jpg",
+                "images/001/01_02.jpg",
+                "images/001/01_03.jpg",
+                "images/001/01_04.jpg"
+            ],
+            "status": "active"
+
+          } , 
+          {
+            "id":2,
+            "title": "Blue Business",
+            "description":"This truck is all business. 6 speed manual transmission. This truck can handle all your towing needs. Jake brake. Great condition. Perfect maintenance record.",
+            "price": 25000.00,
+            "year":2003,
+            "model":2500,
+            "miles":257600,
+            "trim":"SLT",
+            "drive":"4WD",
+            "tran":"Manual",
+            "valve": "24v",
+            "gen":2,
+            "images":[
+                 "images/001/01.jpg",
                 "images/001/02.jpg",
                 "images/001/03.jpg",
                 "images/001/04.jpg"
@@ -23,63 +46,44 @@
 
           } , 
           {
-            "id":2,
-            "title": "Title",
-            "description":"Description",
-            "price": 25000.00,
-            "year":1999,
-            "model":2500,
-            "miles":557645,
-            "trim":"SLT",
-            "drive":"4WD",
-            "tran":"Manual",
-            "valve": "24v",
-            "gen":2,
-            "images":[
-                "url1",
-                "url2",
-                "url3"
-            ],
-            "status": "active"
-
-          } , 
-          {
             "id":3,
-            "title": "Title",
-            "description":"Description",
-            "price": 25000.00,
+            "title": "Black Beauty",
+            "description":"This truck is as beautiful on the inside as it is on the outside. Heavy duty 3500 dually can pull it all. Excellent condition. Gooseneck hitch. Spray in liner. New tires. Not very often a 2005 with manual transmission hits the market. Move on this one before shes gone.",
+            "price": 33000.00,
             "year":2005,
             "model":3500,
-            "miles":557645,
+            "miles":258900,
             "trim":"SLT",
             "drive":"4WD",
             "tran":"Manual",
             "valve": "24v",
             "gen":3,
             "images":[
-                "images/001/01.jpg",
-                "images/001/02.jpg",
-                "images/001/03.jpg"
+                 "images/001/03_01.jpg",
+                "images/001/03_02.jpg",
+                "images/001/03_03.jpg",
+                "images/001/03_04.jpg"
             ],
             "status": "active"
           } , 
           {
             "id":4,
-            "title": "Title",
-            "description":"Description",
-            "price": 25000.00,
+            "title": "Gray Grabber",
+            "description":"Well maintained 6.7. Excellent condition. Off road tires in good condition. Turnover gooseneck hitch. Spray in liner.",
+            "price": 30000.00,
             "year":2010,
             "model":2500,
-            "miles":557645,
+            "miles":307645,
             "trim":"SLT",
             "drive":"4WD",
             "tran":"Automatic",
             "valve": "24v",
             "gen":4,
             "images":[
-                "url1",
-                "url2",
-                "url3"
+                 "images/001/04_01.jpg",
+                "images/001/04_02.jpg",
+                "images/001/04_03.jpg",
+                "images/001/04_04.jpg"
             ],
             "status": "active"
           } 
