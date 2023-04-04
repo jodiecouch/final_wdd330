@@ -30,7 +30,7 @@ nav ul li a {
 h1 {
   text-align: center;
 }
-.results {
+.results.home {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }

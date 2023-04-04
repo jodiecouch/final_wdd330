@@ -113,3 +113,12 @@ function newAdTemplate()
 
       return text;
 }
+
+export async function loadForm()
+{
+    
+    const html = newAdTemplate();
+    const titleElement = document.querySelector(".results");  
+    titleElement.insertAdjacentHTML("beforeend", html);
+  
+}
