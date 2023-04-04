@@ -38,7 +38,7 @@ function adTemplate(truck)
         return text;
 }
 
-export function renderWithTemplate(
+/*export function renderWithTemplate(
   templateFn,
   parentElement,
   data,
@@ -48,6 +48,35 @@ export function renderWithTemplate(
   if(callback){
     callback(data);
   }
+}*/
+
+function adFilters()
+{
+  let text =`<h1>Trucks For Sale</h1>
+      <div class="filters">
+        <button class="filter" id="1500" value="model">1500</button>
+        <button class="filter" id="2500" value="model">2500</button>
+        <button class="filter" id="3500" value="model">3500</button>
+        <button class="filter" id="1" value="gen">Gen 1</button>
+        <button class="filter" id="2" value="gen">Gen 2</button>
+        <button class="filter" id="3" value="gen">Gen 3</button>
+        <button class="filter" id="4" value="gen">Gen 4</button>
+        <button class="filter" id="5" value="gen">Gen 5</button>
+        <button class="filter" id="12" value="valve">12 Valve</button>
+        <button class="filter" id="24" value="valve">24 Valve</button>
+        <button class="filter" id="Manual" value="tran">Manual</button>
+        <button class="filter" id="Automatic" value="tran">Automatic</button>
+        <button id="clearFilter">Clear Filters</button>
+      </div>`
+  return text;
+}
+
+export async function loadFilters()
+{
+  const html = adFilters();
+  const titleElement = document.querySelector(".title");  
+  titleElement.insertAdjacentHTML("beforeend", html);
+  
 }
 
 export async function getAds()
