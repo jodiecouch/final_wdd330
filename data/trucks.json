@@ -35,7 +35,7 @@
             "drive":"4WD",
             "tran":"Manual",
             "valve": "24v",
-            "gen":2,
+            "gen":3,
             "images":[
                  "images/001/01.jpg",
                 "images/001/02.jpg",

@@ -1,7 +1,9 @@
 
 function newAdTemplate()
 {
-    let text = `<form id="newAd" name="create">
+    let text = `<p>Under Construction - the Create Listing button will get the form field data but doesn't do anything with it besides print it to console. 
+    I don't know how I would save the images to a server since I don't really have a server. Also, I would be interested in how sites save user uploaded images and keep them associated with the correct listing.</p>
+    <form id="newAd" name="create">
         <fieldset class="col1">
           <label for="year">Year</label>
           <select name="year" id="year">
